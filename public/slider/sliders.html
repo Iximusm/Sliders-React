@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="./sliders.css" rel="stylesheet">
+    <title>Sliders</title>
+</head>
+<body>
+    <div class="container">
+        <section class="filters">
+          <form class="filters-form" action="https://echo.htmlacademy.ru" method="get">
+            <fieldset class="filters-form__filter">
+              <div class="filters-form__price-range">
+                <input class="filters-form__price" type="number" name="min-price" id="min-price-field" min="0" max="1500" value="100" (&#8381;)>
+                <input class="filters-form__price" type="number" name="max-price" id="max-price-field" min="0" max="1500" value="900">
+              </div>
+              <div class="filters-form__field filters-form__field--slider">
+                <div class="slider-contoller">
+                  <div class="slider-contoller__scale">
+                    <div class="slider-contoller__current-range"></div>
+                  </div>
+                  
+                  <!-- левый ползунок  -->
+                  <button class="slider-contoller__grip slider-contoller__grip--min" type="button"></button> 
+                  <!-- правый ползунок  -->
+                  <button class="slider-contoller__grip slider-contoller__grip--max" type="button"></button>
+                </div>
+              </div>
+            </fieldset>
+          </form>
+        </section>
+    </div>
+      
+    <script src="sliders.js"></script>
+</body>
+</html>
